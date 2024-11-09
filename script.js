@@ -11,9 +11,10 @@ function updateClock() {
     if (hours === 11 && minutes === 11) {
         clockElement.textContent = "Make a Wish!";
     } else {
-        clockElement.textContent = `Current Time: ${formattedTime}`;
+        clockElement.textContent = formattedTime;
     }
 }
 
 // Update the clock every second
 setInterval(updateClock, 1000);
+
